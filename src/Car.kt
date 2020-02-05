@@ -9,7 +9,10 @@ fun main(args: Array<String>) {
     var newBoxer= Boxer("Jony",1000,20-0)
 
     //how we can call Constructor
-    var animal = Animal(1000)
+   // var animal = Animal(1000)
+
+    //** This is how we call the second Constructor
+    var animal = Animal("Thomas","Red",200,1000)
 
 
 }
@@ -54,6 +57,8 @@ class Animal(power: Int){
 
     //Second Constructor or Custome one
     constructor(name: String, color: String, speed: Int,power: Int):this(power){
+   println("This is a Second Constructor called " +"Name is "+ name + " color is  : " + color + " and Speed is " + speed + " Power " + power)
 
+        //This is what you will see in the Screen "This is a Second Constructor called Name is Thomas color is  : Red and Speed is 200 Power 1000"
     }
 }
